@@ -1,9 +1,8 @@
 package com.example.crochet.commission;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.example.crochet.client.Client;
+
+import javax.persistence.*;
 
 @Entity
 public class Commission {
@@ -18,15 +17,19 @@ public class Commission {
 	private TypeComm type;
 	private Float prix; //unité : euro
 	private StatutComm statut;
+	@ManyToOne
+	//@JoinColumn(name = "client_id")
+	private Client client;
 
 	public Commission() {
 	}
 
-	public Commission(String titre, TypeComm type, Float prix, StatutComm statut) {
+	public Commission(String titre, TypeComm type, Float prix, StatutComm statut, Client client) {
 		this.titre = titre;
 		this.type = type;
 		this.prix = prix;
 		this.statut = statut;
+		this.client = client;
 	}
 
 	public Long getId() {
@@ -67,5 +70,13 @@ public class Commission {
 
 	public void setStatut(StatutComm statut) {
 		this.statut = statut;
+	}
+
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
 	}
 }
