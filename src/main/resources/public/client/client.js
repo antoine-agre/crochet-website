@@ -1,13 +1,3 @@
-//var out;
-
-/*const renderEl = (id, prenom, nom, age, mail) => {
-  return `<li><b>id : </b> ${parseInt(id)}  
-      <b>prénom : </b> ${prenom}  
-      <b>nom : </b> ${nom}  
-      <b>age : </b> ${parseInt(age)}  
-      <b>mail : </b> ${mail} </li>`
-}*/
-
 const renderComm = (id, titre, type, prix, statut) => {
   return `<h3>${titre}</h3>
   <p><strong>Identifiant : </strong>${id}</p>
