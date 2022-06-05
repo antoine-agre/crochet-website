@@ -15,17 +15,17 @@
     
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="infos/infos.html">Infos</a></li>
-        <li><a href="prix/prix.html">Prix</a></li>
-        <li><a href="contact/contact.html">Contact</a></li>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../infos/infos.html">Infos</a></li>
+        <li><a href="../prix/prix.html">Prix</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <nav id="commNav">
       <ul>
         <li><a href="../client/client.html">Espace client</a></li>
-        <li><a href="../liste/liste.html">Commissions en cours</a></li>
+        <li><a href="liste.html">Commissions en cours</a></li>
         <li>Espace administrateur</li>
       </ul>
     </nav>
@@ -34,15 +34,19 @@
 
       <article>
 
-        <h2>Accueil</h2>
+        <h2>Liste d'attente</h2>
 
-        <p>Hello !</p>
-        <p>Je suis Max, une créatrice de peluches en crochet de toutes les formes et de toutes les couleurs.</p> 
-        <p>Je crée des peluches de vos personnages sur commande, et serais ravie de vous aider à créer la peluche que vous désirez !</p>
+        <p>Vous trouverez ci-dessous la liste des commissions en attente.</p>
+        <p>Si vous ne voyez pas la vôtre, c'est sûrement car elle n'a pas encore été acceptée.</p>
+        <br>
+        <p>Les commissions sont "en attente" si elle sont payées ou en attente de paiement, c'est-à-dire que le devis a été accepté par l'artiste et le client.</p>
 
-        <h3>Sur ce site</h3>
+        <hr>
 
-        <p>Liste trucs à faire (commissions)</p>
+        <div id="listeComms">
+        </div>
+
+        
 
       </article>
 
@@ -51,14 +55,14 @@
     <footer>
       <div class="footer-column">
         <a href="https://www.instagram.com/mam.iel/">
-          <img class="icon" src="assets/icon_insta.svg"/>
+          <img class="icon" src="../assets/icon_insta.svg"/>
           <strong>Mamiel</strong>
         </a>
       </div>
 
       <div class="footer-column">
         <a href="mailto:mamiel.crochet@gmail.com">
-          <img class="icon" src="assets/icon_mail.svg"/>
+          <img class="icon" src="../assets/icon_mail.svg"/>
           <strong>mamiel.crochet@gmail.com</strong>
         </a>
       </div>
@@ -67,8 +71,8 @@
   </body>
 
   <link href="https://fonts.googleapis.com/css?family=Mali|Quicksand" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="style/styles.css"/>
+  <link rel="stylesheet" href="../style/styles.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="index.js"></script>
+  <script src="liste.js"></script>
 
 </html>
