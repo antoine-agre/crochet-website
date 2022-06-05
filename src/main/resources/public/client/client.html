@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+
+    <title>Mamiel</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>La fabrique à<br>peluches de Max</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../infos/infos.html">Infos</a></li>
+        <li><a href="../prix/prix.html">Prix</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav id="commNav">
+      <ul>
+        <li><a href="client.html">Espace client</a></li>
+        <li>Commissions en cours</li>
+        <li>Espace administrateur</li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <article>
+
+        <h2>Espace client</h2>
+
+        <p>Sur cette page, vous pouvez renseigner votre numéro client pour accéder à vos commissions en cours.</p>
+
+        <h3>Numéro client</h3>
+
+        <form>
+          <input type="number" id="clientNumberInput" placeholder="Entrez votre numéro client">
+          <input type="button" id="clientNumberButton" value="Confirmer">
+        </form>
+
+        <hr>
+
+        <div id="listeComms">
+          <h3>Titre</h3>
+          <p><strong>Identifiant : </strong>12</p>
+          <p><strong>Type : </strong>Petite peluche</p>
+          <p><strong>Prix : </strong>45€</p>
+          <p><strong>Statut : </strong>En cours de discussion</p>
+          <hr>
+        </div>
+
+        
+
+      </article>
+
+    </main>
+
+    <footer>
+      <div class="footer-column">
+        <a href="https://www.instagram.com/mam.iel/">
+          <img class="icon" src="../assets/icon_insta.svg"/>
+          <strong>Mamiel</strong>
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <a href="mailto:mamiel.crochet@gmail.com">
+          <img class="icon" src="../assets/icon_mail.svg"/>
+          <strong>mamiel.crochet@gmail.com</strong>
+        </a>
+      </div>
+    </footer>
+    
+  </body>
+
+  <link href="https://fonts.googleapis.com/css?family=Mali|Quicksand" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../style/styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="client.js"></script>
+
+</html>
