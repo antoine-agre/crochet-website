@@ -47,14 +47,14 @@ $(function() {
 
   //Sauvegarder les modifications
   $("#currentCommButton").on("click", function() {
-    console.log("fonction exécutée");
+    
     var patch = {
       "titre": $("#titleInput").val(),
       "type": $("#typeDropdown").val(),
       "prix": $("#priceInput").val(),
       "statut": $("#statusDropdown").val()
     };
-    console.log("patch créé");
+    
     $.ajax({
       type: "PATCH",
       url: "../rest/commissions/" + currentCommId, //$("#currentCommId").val(),
@@ -64,6 +64,18 @@ $(function() {
     });
 
     $("#currentComm").append("Commission mise à jour.");
+  });
+
+  //Supprimer la commission
+  $("#currentCommDelete").on("click", function() {
+    
+    $.ajax({
+      type: "DELETE",
+      url: "../rest/commissions/" + currentCommId
+    });
+
+    $("#currentComm").empty();
+    $("#currentComm").append("Commission supprimée.");
   });
 
   //remplir liste de commissions
