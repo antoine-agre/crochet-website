@@ -2,6 +2,20 @@
 
 Ce projet est un petit site web utilisant Spring Boot, jQuery, et hsqldb.
 
+## Lancer le serveur
+
+- hsqldb doit se trouver dans un répertoire frère de celui du projet
+- Lancer la base de données :
+
+`cd hsqldb-2.6.1\hsqldb\lib`
+
+`java -cp hsqldb.jar org.hsqldb.server.Server --database.0 file:crochetDB --dbname.0 CrochetBDD`
+
+- Si vous utilisez le database manager (`hsqldb-2.6.1\hsqldb\lib\hsqldb.jar`), 
+l'URL est `jdbc:hsqldb:hsql://localhost/CrochetBDD`, le login est `SA`, sans mot de pass
+- Exécuter la classe `com.example.crochet.CrochetApplication`
+- La page d'accueil se trouve à `http://localhost:8080/index.html`
+
 ## Cahier des charges
 
 - Application autonome avec Spring Boot
