@@ -17,7 +17,7 @@ public class Commission {
 	private TypeComm type;
 	private Float prix; //unité : euro
 	private StatutComm statut;
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.MERGE)
 	//@JoinColumn(name = "client_id")
 	private Client client;
 

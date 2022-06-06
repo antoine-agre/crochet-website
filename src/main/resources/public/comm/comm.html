@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+
+    <title>La fabrique à peluches de Max</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>La fabrique à<br>peluches de Max</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../infos/infos.html">Infos</a></li>
+        <li><a href="../prix/prix.html">Prix</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../comm/comm.html">Commission</a></li>
+      </ul>
+    </nav>
+
+    <nav id="commNav">
+      <ul>
+        <li><a href="../client/client.html">Espace client</a></li>
+        <li><a href="../liste/liste.html">Commissions en cours</a></li>
+        <li><a href="../admin/admin.html">Espace administrateur</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <article>
+
+        <h2>Demander une commission</h2>
+
+        <p>Remplissez ce formulaire pour faire une demande de commission.</p>
+        <p>Vous serez recontacté pour discuter des détails.</p>
+        <p><strong>Le prix donné n'est qu'une estimation</strong>, et c'est l'artiste qui aura le dernier mot sur le prix demandé.</p>
+
+        <hr>
+
+        <h3>Formulaire</h3>
+
+        <p><strong>Nouveau client ?</strong>
+        <input type="checkbox" id="newClientCheckbox" class="form"></p>
+
+        <div id="oldClient">
+          <p><strong>Identifiant client : </strong>
+          <input type="number" id="clientIdInput"></p>
+
+          <p><strong>Client sélectionné : </strong>
+          <span id="clientName"></span></p>
+        </div>
+
+        <div hidden id="newClient">
+          <p><strong>Nom : </strong>
+          <input type="text" id="clientNameInput" placeholder="Votre nom/pseudonyme"></p>
+
+          <p><strong>Contacts : </strong>
+          <input type="text" id="clientContactsInput" placeholder="Où vous contacter"></p>
+        </div>
+
+        <hr>
+
+        <p><strong>Titre : </strong>
+        <input type="text" id="commTitle" class="form"></p>
+
+        <p><strong>Type : </strong>
+        <select id="commType" class="form">
+          <option value="PETITE">Petite (20€)</option>
+          <option value="MOYENNE">Moyenne (35€)</option>
+          <option value="GRANDE">Grande (50€)</option>
+          <option value="QUAD">Quadrupède (35€)</option>
+          <option value="AUTRE">Autre (Selon demande)</option>
+        </select>
+        </p>
+
+        <p>
+          <strong>Accessoires : </strong>
+          <input type="number" id="commAccs" class="form" value="0" min="0">
+          <em>+5€ par accessoire</em>
+        </p>
+        <p>
+          <strong>Anatomie complexe ?</strong>
+          <input type="checkbox" id="commAnat" class="form">
+          <em>+10€</em>
+        </p>
+        <p>
+          <strong>Yeux peints ?</strong>
+          <input type="checkbox" id="commYeux" class="form">
+          <em>+5€</em>
+        </p>
+
+        <p>
+          <strong>Estimation du prix : </strong>
+          <span id="commPrice"></span>
+        </p>
+
+        <input type="button" id="createCommButton" value="Confirmer">
+
+        <p id="clientIdOutput"></p>
+        <p id="confirmationOutput"></p>
+        
+
+      </article>
+
+    </main>
+
+    <footer>
+      <div class="footer-column">
+        <a href="https://www.instagram.com/mam.iel/">
+          <img class="icon" src="../assets/icon_insta.svg"/>
+          <strong>Mamiel</strong>
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <a href="mailto:mamiel.crochet@gmail.com">
+          <img class="icon" src="../assets/icon_mail.svg"/>
+          <strong>mamiel.crochet@gmail.com</strong>
+        </a>
+      </div>
+    </footer>
+    
+  </body>
+
+  <link href="https://fonts.googleapis.com/css?family=Mali|Quicksand" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../style/styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="comm.js"></script>
+
+</html>
